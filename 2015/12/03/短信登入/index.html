@@ -15,17 +15,17 @@
 
 
 
-<meta name="description" content="总有一天，我会红透半边天的！">
-<meta property="og:type" content="website">
-<meta property="og:title" content="JackWang的个人博客">
-<meta property="og:url" content="http://www.wangbing003.top/about/index.html">
+<meta name="description" content="https://download.csdn.net/download/qq_37493851/10852363  进入秒嘀科技（http://www.miaodiyun.com/），注册一个账号  注册好之后，点击 用户中心 -&amp;gt; 账户管理，就会进入如下界面 （顺便提一下，新注册的用户，平台会免费赠送你10元，足够大家学习和使用了，所以不用担心需要充钱）  你需要做的就是获取你自己的 ACC">
+<meta property="og:type" content="article">
+<meta property="og:title" content="短信验证登入实现">
+<meta property="og:url" content="http://www.wangbing003.top/2015/12/03/短信登入/index.html">
 <meta property="og:site_name" content="JackWang的个人博客">
-<meta property="og:description" content="总有一天，我会红透半边天的！">
+<meta property="og:description" content="https://download.csdn.net/download/qq_37493851/10852363  进入秒嘀科技（http://www.miaodiyun.com/），注册一个账号  注册好之后，点击 用户中心 -&amp;gt; 账户管理，就会进入如下界面 （顺便提一下，新注册的用户，平台会免费赠送你10元，足够大家学习和使用了，所以不用担心需要充钱）  你需要做的就是获取你自己的 ACC">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-12-31T14:22:31.127Z">
+<meta property="og:updated_time" content="2018-12-31T17:25:40.933Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="JackWang的个人博客">
-<meta name="twitter:description" content="总有一天，我会红透半边天的！">
+<meta name="twitter:title" content="短信验证登入实现">
+<meta name="twitter:description" content="https://download.csdn.net/download/qq_37493851/10852363  进入秒嘀科技（http://www.miaodiyun.com/），注册一个账号  注册好之后，点击 用户中心 -&amp;gt; 账户管理，就会进入如下界面 （顺便提一下，新注册的用户，平台会免费赠送你10元，足够大家学习和使用了，所以不用担心需要充钱）  你需要做的就是获取你自己的 ACC">
 
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
@@ -57,7 +57,7 @@
 <link href="//cdn.bootcss.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet">
 
 
-<title>JackWang的个人博客</title>
+<title>短信验证登入实现 | JackWang的个人博客</title>
 
 <script src="//cdn.bootcss.com/jquery/2.2.4/jquery.min.js"></script>
 <script src="//cdn.bootcss.com/clipboard.js/1.5.10/clipboard.min.js"></script>
@@ -67,7 +67,7 @@
         fancybox: true,
         animate: true,
         isHome: false,
-        isPost: false,
+        isPost: true,
         isArchive: false,
         isTag: false,
         isCategory: false,
@@ -274,11 +274,11 @@
     </div>
     <link class="menu-list" tags="标签" friends="友情链接" about="关于我">
 </nav>
-      <div class="body-wrap"><article id="page-" class="article article-type-page" itemscope="" itemprop="blogPost">
+      <div class="body-wrap"><article id="post-短信登入" class="article article-type-post" itemscope="" itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/about/index.html" class="article-date">
-      <time datetime="2018-12-31T14:23:08.064Z" itemprop="datePublished">2018-12-31</time>
+      <a href="/2015/12/03/短信登入/" class="article-date">
+      <time datetime="2015-12-02T16:00:00.000Z" itemprop="datePublished">2015-12-03</time>
 </a>
 
 
@@ -289,40 +289,242 @@
       <input type="hidden" class="isFancy">
     
     
+      <header class="article-header">
+        
+  
+    <h1 class="article-title" itemprop="name">
+      短信验证登入实现
+    </h1>
+  
+
+      </header>
+      
+      <div class="article-info article-info-post">
+        
+
+        
+        <div class="clearfix"></div>
+      </div>
+      
+    
     <div class="article-entry" itemprop="articleBody">
       
           
-              <style>
-    .article-meta { display: none; }
-    #container .article .article-title { padding-right: 0; }
-    .article-header {
-        padding: 0;
-        padding-top: 26px;
-        border-left: none;
-        text-align: center;
+        <p><excerpt in="" index="" |="" 首页摘要=""><br><a href="https://download.csdn.net/download/qq_37493851/10852363" target="_blank" rel="noopener">https://download.csdn.net/download/qq_37493851/10852363</a></excerpt></p>
+<ol>
+<li><p>进入秒嘀科技（<a href="http://www.miaodiyun.com/），注册一个账号" target="_blank" rel="noopener">http://www.miaodiyun.com/），注册一个账号</a></p>
+</li>
+<li><p>注册好之后，点击 用户中心 -&gt; 账户管理，就会进入如下界面 （顺便提一下，新注册的用户，平台会免费赠送你10元，足够大家学习和使用了，所以不用担心需要充钱）  你需要做的就是获取你自己的 ACCOUNT SID 和 AUTH TOKEN<br>图片</p>
+</li>
+<li><p>需要在秒嘀上新建一个发送手机验证码的模板，点击 配置管理 -&gt; 验证码短信模板，就会进入如下界面<br>图片<br>4.点击“新建模板”按钮， 填写好模板名称、短信签名 和 短信内容（短信内容可以选择 验证码通知短信模板 或者 自己编写短信内容），点击“提交审核”按钮即可，界面如下<br>图片<br>5.审核成功后点击右上角API文档&gt;Https api&gt;验证码通知短信&gt;复制请求地址，如<a href="https://api.miaodiyun.com/****0822/industrySMS/sendSMS" target="_blank" rel="noopener">https://api.miaodiyun.com/****0822/industrySMS/sendSMS</a></p>
+</li>
+<li><p>接下来就是代码了，把我圈住的地方改成自己的就行，其他的不用动<br>项目目录结构，短信发送所需的类在util包里<br>图片</p>
+</li>
+</ol>
+<p>图片<br>GetMessage类：<br>package util;</p>
+<p>import net.sf.json.JSONObject;</p>
+<p>import java.io.BufferedReader;<br>import java.io.InputStream;<br>import java.io.InputStreamReader;<br>import java.io.OutputStreamWriter;<br>import java.net.URL;<br>import java.net.URLConnection;</p>
+<p>/**</p>
+<ul>
+<li>获取短信验证码类</li>
+<li>@author LB_lfx<br><em>
+</em><br>*/<br>public class GetMessage {</li>
+</ul>
+<pre><code>/**
+ * 用户ID
+ */
+public static final String ACCOUNT_SID = &quot;&quot;;//这里填写你在平台里的ACOUNT_SID
+
+/**
+ * 密钥
+ */
+public static final String AUTH_TOKEN = &quot;&quot;;//这里填写你在平台里的AUTH_TOKEN
+
+/**
+ * 请求地址前半部分
+ */
+public static final String BASE_URL = &quot;&quot;;//上面说的请求地址
+
+public static  String randNum = RandUtil.getRandNum();
+                                      //必须与自己建的模板一样，切记！！！
+public  static String smsContent = &quot;【分多多】尊敬的用户，您的验证码是&quot;+randNum+&quot;,请在规定时间内完成验证，如非本人操作请忽略此短信。&quot;;
+/**
+ * (获取短信验证码)
+ * @param to
+ * @return String
+ */
+public static String getResult(String to) {
+    randNum = RandUtil.getRandNum();
+    String smsContent = &quot;【分多多】尊敬的用户，您的验证码是&quot;+randNum+&quot;,请在规定时间内完成验证，如非本人操作请忽略此短信。&quot;;            //这里的randNum 和 smsContent和上面的静态变量是一样的，可删除可保留
+    String args = QueryUtil.queryArguments(ACCOUNT_SID, AUTH_TOKEN, smsContent, to);
+    OutputStreamWriter out = null;
+    InputStream in = null;
+    BufferedReader br = null;
+    StringBuffer sb = new StringBuffer();
+
+
+    try {
+        URL url = new URL(BASE_URL);
+        URLConnection connection = url.openConnection(); //打开链接
+        connection.setDoOutput(true);
+        connection.setDoInput(true);
+        connection.setConnectTimeout(5000);  //设置链接超时
+        connection.setReadTimeout(10000);    //设置读取超时
+
+        //提交数据
+        out = new OutputStreamWriter(connection.getOutputStream(),&quot;utf-8&quot;);
+        out.write(args);
+        out.flush();
+
+        //读取返回数据
+        br = new BufferedReader(new InputStreamReader(connection.getInputStream()));
+        String line = &quot;&quot;;
+        while((line = br.readLine())!=null){
+            sb.append(line);
+        }
+    } catch (Exception e) {
+        e.printStackTrace();
+    }finally {
+        try {
+            if (br!=null) {
+                br.close();
+            }
+            if (out!=null) {
+                out.close();
+            }
+        } catch (Exception e2) {
+            e2.printStackTrace();
+        }
     }
-    .article-header:hover { border-left: none; }
-    .article-title { font-size: 1.6em }
-    .article-entry hr { margin: 0;}
-    .article-meta,
-    #container .article-info-post.article-info { display: none;}
-    #container .article .article-title { padding: 0; }
-</style>
+    JSONObject jsonObject = JSONObject.fromObject(sb.toString());
+    System.out.println(jsonObject);
+    Object object = jsonObject.get(&quot;respCode&quot;);
+    System.out.println(&quot;状态码：&quot;+object+&quot;验证码：&quot;+randNum);
+    System.out.println(!object.equals(&quot;00000&quot;));
+    if (!object.equals(&quot;00000&quot;)) {
+        return object.toString();
+    }else{
+
+        return randNum;
+    }
 
 
-          
-        <p>总有一天，我会红透半边天的！</p>
+}
+</code></pre><p>}</p>
+<p>QueryUtil 类：<br>package util;</p>
+<p>import java.security.MessageDigest;<br>import java.security.NoSuchAlgorithmException;<br>import java.text.SimpleDateFormat;<br>import java.util.Date;</p>
+<p>/**</p>
+<ul>
+<li><p>类描述：发送验证码工具类<br>*/<br>public class QueryUtil {</p>
+<p> public static String queryArguments(String ACCOUNT_SID,String AUTH_TOKEN, String smsContent,String to) {</p>
+<pre><code>String timestamp = getTimestamp(); //时间戳
+String sig =  MD5(ACCOUNT_SID,AUTH_TOKEN,timestamp);//签名认证
 
+String str = &quot;accountSid=&quot;+ACCOUNT_SID+&quot;&amp;smsContent=&quot;+
+        smsContent+&quot;&amp;to=&quot;+to+&quot;&amp;timestamp=&quot;+timestamp+&quot;&amp;sig=&quot;+sig;
+return str;
+</code></pre><p> }<br> /**</p>
+<ul>
+<li>MD5加密</li>
+<li>@param args</li>
+<li><p>@return<br>*/<br>public static String MD5(String… args){ //动态参数<br> StringBuffer result = new StringBuffer();<br> if (args == null || args.length == 0) {</p>
+<pre><code>return &quot;&quot;;
+</code></pre><p> } else {</p>
+<pre><code>StringBuffer str = new StringBuffer();
+for (String string : args) {
+    str.append(string);
+}
+System.out.println(&quot;加密前：\t&quot;+str.toString());
+
+try {
+    MessageDigest digest = MessageDigest.getInstance(&quot;MD5&quot;);
+    byte[] bytes = digest.digest(str.toString().getBytes());
+    for (byte b : bytes) {
+        String hex = Integer.toHexString(b&amp;0xff);  //转化十六进制
+        if (hex.length() == 1) {
+            result.append(&quot;0&quot;+hex);
+        }else{
+            result.append(hex);
+        }
+    }
+
+} catch (NoSuchAlgorithmException e) {
+    e.printStackTrace();
+}
+</code></pre><p> }<br> System.out.println(“加密后：\t”+result.toString());<br> return result.toString();<br>}<br>/*</p>
+</li>
+<li>获取时间戳<br>*/<br>public static String getTimestamp(){<br> SimpleDateFormat sdf = new SimpleDateFormat(“yyyyMMddHHmmss”);<br> Date date = new Date();<br> return sdf.format(date);<br>}</li>
+</ul>
+</li>
+</ul>
+<p>}</p>
+<p> RandUtil类：<br>package util;<br>import java.util.Random;<br>public class RandUtil {<br>public static String getRandNum() {<br>        String randNum = new Random().nextInt(1000000)+””;<br>        System.out.println(“生成”+randNum);<br>        if (randNum.length()!=6) {   //如果生成的不是6位数随机数则返回该方法继续生成<br>            return getRandNum();<br>        }<br>        return randNum;<br>    }<br>}<br>test类：<br>package Test;</p>
+<p>import util.GetMessage;</p>
+<p>public class test {<br>public static void main(String[] args) {<br>GetMessage a=new GetMessage();<br>String result = a.getResult(“手机号”);<br>        System.out.println(“验证码：”+a.randNum+”\t”+result);<br>}</p>
+<p>}</p>
+<p>所需jar包下载：<br>链接：<a href="https://pan.baidu.com/s/1VR73YIQXQE3paeqFnIePMg" target="_blank" rel="noopener">https://pan.baidu.com/s/1VR73YIQXQE3paeqFnIePMg</a> ;<br>提取码：s29m </p>
+<p>项目下载：<a href="https://download.csdn.net/download/qq_37493851/10852363" target="_blank" rel="noopener">https://download.csdn.net/download/qq_37493851/10852363</a></p>
+<a id="more"></a>
+<the rest="" of="" contents="" |="" 余下全文=""></the>
       
     </div>
     
   </div>
   
     
+    <div class="copyright">
+        <p><span>本文标题:</span><a href="/2015/12/03/短信登入/">短信验证登入实现</a></p>
+        <p><span>文章作者:</span><a href="/" title="回到主页">JackWang</a></p>
+        <p><span>发布时间:</span>2015-12-03, 00:00:00</p>
+        <p><span>最后更新:</span>2019-01-01, 01:25:40</p>
+        <p>
+            <span>原始链接:</span><a class="post-url" href="/2015/12/03/短信登入/" title="短信验证登入实现">http://www.wangbing003.top/2015/12/03/短信登入/</a>
+            <span class="copy-path" data-clipboard-text="原文: http://www.wangbing003.top/2015/12/03/短信登入/　　作者: JackWang" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
+            <script> var clipboard = new Clipboard('.copy-path'); </script>
+        </p>
+        <p>
+            <span>许可协议:</span><i class="fa fa-creative-commons"></i> <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/" title="CC BY-NC-SA 4.0 International" target="_blank">"署名-非商用-相同方式共享 4.0"</a> 转载请保留原文链接及作者。
+        </p>
+    </div>
 
+
+
+    <nav id="article-nav">
+        
+            <div id="article-nav-newer" class="article-nav-title">
+                <a href="/2018/12/28/hello-world/">
+                    Hello World
+                </a>
+            </div>
+        
+        
+    </nav>
 
   
 </article>
+
+    <div id="toc" class="toc-article">
+        <strong class="toc-title">文章目录</strong>
+        
+            
+        
+    </div>
+    <style>
+        .left-col .switch-btn,
+        .left-col .switch-area {
+            display: none;
+        }
+        .toc-level-3 i,
+        .toc-level-3 ol {
+            display: none !important;
+        }
+    </style>
+
+    <input type="button" id="tocButton" value="隐藏目录" title="点击按钮隐藏或者显示文章目录">
+
+    <script>
+        yiliaConfig.toc = ["隐藏目录", "显示目录", !!"false"];
+    </script>
 
 
 
@@ -340,7 +542,7 @@
         </div>
         <script>
             window._bd_share_config={
-                "common":{"bdSnsKey":{},"bdText":"　| JackWang的个人博客　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
+                "common":{"bdSnsKey":{},"bdText":"短信验证登入实现　| JackWang的个人博客　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
         </script>
     
 
@@ -359,8 +561,8 @@
     <div id="disqus_thread"></div>
     <script>
         var disqus_config = function(){
-            this.page.url = 'http://www.wangbing003.top/about/index.html';
-            this.page.identifier = 'about/index.html';
+            this.page.url = 'http://www.wangbing003.top/2015/12/03/短信登入/';
+            this.page.identifier = '2015/12/03/短信登入/';
         };
         var loadComment = function(){
             var d = document, s = d.createElement('script');
@@ -377,6 +579,24 @@
 
     
 
+
+
+
+    <div class="scroll" id="post-nav-button">
+        
+            <a href="/2018/12/28/hello-world/" title="上一篇: Hello World">
+                <i class="fa fa-angle-left"></i>
+            </a>
+        
+
+        <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
+
+        
+            <a href="/" title="回到主页"><i class="fa fa-home"></i></a>
+        
+    </div>
+
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2018/12/28/hello-world/">Hello World</a></li><li class="post-list-item"><a class="post-list-link" href="/2015/12/03/短信登入/">短信验证登入实现</a></li></ul>
 
 
 

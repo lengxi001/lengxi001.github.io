@@ -277,10 +277,74 @@
 </nav>
       <div class="body-wrap">
   
-    <article id="post-测试" class="article article-type-post" itemscope="" itemprop="blogPost">
+    <article id="post-hello-world" class="article article-type-post" itemscope="" itemprop="blogPost">
   
     <div class="article-meta">
-      <a href="/2015/12/03/测试/" class="article-date">
+      <a href="/2018/12/28/hello-world/" class="article-date">
+      <time datetime="2018-12-28T15:42:48.712Z" itemprop="datePublished">2018-12-28</time>
+</a>
+
+
+    </div>
+  
+  <div class="article-inner">
+    
+      <input type="hidden" class="isFancy">
+    
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2018/12/28/hello-world/">Hello World</a>
+    </h1>
+  
+
+      </header>
+      
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+          
+        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="noopener">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="noopener">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="noopener">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="noopener">GitHub</a>.</p>
+<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">"My New Post"</span></span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="noopener">Writing</a></p>
+<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="noopener">Server</a></p>
+<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="noopener">Generating</a></p>
+<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
+<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="noopener">Deployment</a></p>
+
+      
+    </div>
+    
+    <div class="article-info article-info-index">
+      
+      
+
+      
+      
+      <div class="clearfix"></div>
+    </div>
+    
+  </div>
+  
+</article>
+
+
+
+
+
+
+
+
+
+  
+    <article id="post-短信登入" class="article article-type-post" itemscope="" itemprop="blogPost">
+  
+    <div class="article-meta">
+      <a href="/2015/12/03/短信登入/" class="article-date">
       <time datetime="2015-12-02T16:00:00.000Z" itemprop="datePublished">2015-12-03</time>
 </a>
 
@@ -296,7 +360,7 @@
         
   
     <h1 itemprop="name">
-      <a class="article-title" href="/2015/12/03/测试/">短信验证登入实现</a>
+      <a class="article-title" href="/2015/12/03/短信登入/">短信验证登入实现</a>
     </h1>
   
 
@@ -306,10 +370,163 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-              <p><excerpt in="" index="" |="" 首页摘要=""><br><a href="https://download.csdn.net/download/qq_37493851/10852363" target="_blank" rel="noopener">https://download.csdn.net/download/qq_37493851/10852363</a><br>
+              <p><excerpt in="" index="" |="" 首页摘要=""><br><a href="https://download.csdn.net/download/qq_37493851/10852363" target="_blank" rel="noopener">https://download.csdn.net/download/qq_37493851/10852363</a></excerpt></p>
+<ol>
+<li><p>进入秒嘀科技（<a href="http://www.miaodiyun.com/），注册一个账号" target="_blank" rel="noopener">http://www.miaodiyun.com/），注册一个账号</a></p>
+</li>
+<li><p>注册好之后，点击 用户中心 -&gt; 账户管理，就会进入如下界面 （顺便提一下，新注册的用户，平台会免费赠送你10元，足够大家学习和使用了，所以不用担心需要充钱）  你需要做的就是获取你自己的 ACCOUNT SID 和 AUTH TOKEN<br>图片</p>
+</li>
+<li><p>需要在秒嘀上新建一个发送手机验证码的模板，点击 配置管理 -&gt; 验证码短信模板，就会进入如下界面<br>图片<br>4.点击“新建模板”按钮， 填写好模板名称、短信签名 和 短信内容（短信内容可以选择 验证码通知短信模板 或者 自己编写短信内容），点击“提交审核”按钮即可，界面如下<br>图片<br>5.审核成功后点击右上角API文档&gt;Https api&gt;验证码通知短信&gt;复制请求地址，如<a href="https://api.miaodiyun.com/****0822/industrySMS/sendSMS" target="_blank" rel="noopener">https://api.miaodiyun.com/****0822/industrySMS/sendSMS</a></p>
+</li>
+<li><p>接下来就是代码了，把我圈住的地方改成自己的就行，其他的不用动<br>项目目录结构，短信发送所需的类在util包里<br>图片</p>
+</li>
+</ol>
+<p>图片<br>GetMessage类：<br>package util;</p>
+<p>import net.sf.json.JSONObject;</p>
+<p>import java.io.BufferedReader;<br>import java.io.InputStream;<br>import java.io.InputStreamReader;<br>import java.io.OutputStreamWriter;<br>import java.net.URL;<br>import java.net.URLConnection;</p>
+<p>/**</p>
+<ul>
+<li>获取短信验证码类</li>
+<li>@author LB_lfx<br><em>
+</em><br>*/<br>public class GetMessage {</li>
+</ul>
+<pre><code>/**
+ * 用户ID
+ */
+public static final String ACCOUNT_SID = &quot;&quot;;//这里填写你在平台里的ACOUNT_SID
+
+/**
+ * 密钥
+ */
+public static final String AUTH_TOKEN = &quot;&quot;;//这里填写你在平台里的AUTH_TOKEN
+
+/**
+ * 请求地址前半部分
+ */
+public static final String BASE_URL = &quot;&quot;;//上面说的请求地址
+
+public static  String randNum = RandUtil.getRandNum();
+                                      //必须与自己建的模板一样，切记！！！
+public  static String smsContent = &quot;【分多多】尊敬的用户，您的验证码是&quot;+randNum+&quot;,请在规定时间内完成验证，如非本人操作请忽略此短信。&quot;;
+/**
+ * (获取短信验证码)
+ * @param to
+ * @return String
+ */
+public static String getResult(String to) {
+    randNum = RandUtil.getRandNum();
+    String smsContent = &quot;【分多多】尊敬的用户，您的验证码是&quot;+randNum+&quot;,请在规定时间内完成验证，如非本人操作请忽略此短信。&quot;;            //这里的randNum 和 smsContent和上面的静态变量是一样的，可删除可保留
+    String args = QueryUtil.queryArguments(ACCOUNT_SID, AUTH_TOKEN, smsContent, to);
+    OutputStreamWriter out = null;
+    InputStream in = null;
+    BufferedReader br = null;
+    StringBuffer sb = new StringBuffer();
+
+
+    try {
+        URL url = new URL(BASE_URL);
+        URLConnection connection = url.openConnection(); //打开链接
+        connection.setDoOutput(true);
+        connection.setDoInput(true);
+        connection.setConnectTimeout(5000);  //设置链接超时
+        connection.setReadTimeout(10000);    //设置读取超时
+
+        //提交数据
+        out = new OutputStreamWriter(connection.getOutputStream(),&quot;utf-8&quot;);
+        out.write(args);
+        out.flush();
+
+        //读取返回数据
+        br = new BufferedReader(new InputStreamReader(connection.getInputStream()));
+        String line = &quot;&quot;;
+        while((line = br.readLine())!=null){
+            sb.append(line);
+        }
+    } catch (Exception e) {
+        e.printStackTrace();
+    }finally {
+        try {
+            if (br!=null) {
+                br.close();
+            }
+            if (out!=null) {
+                out.close();
+            }
+        } catch (Exception e2) {
+            e2.printStackTrace();
+        }
+    }
+    JSONObject jsonObject = JSONObject.fromObject(sb.toString());
+    System.out.println(jsonObject);
+    Object object = jsonObject.get(&quot;respCode&quot;);
+    System.out.println(&quot;状态码：&quot;+object+&quot;验证码：&quot;+randNum);
+    System.out.println(!object.equals(&quot;00000&quot;));
+    if (!object.equals(&quot;00000&quot;)) {
+        return object.toString();
+    }else{
+
+        return randNum;
+    }
+
+
+}
+</code></pre><p>}</p>
+<p>QueryUtil 类：<br>package util;</p>
+<p>import java.security.MessageDigest;<br>import java.security.NoSuchAlgorithmException;<br>import java.text.SimpleDateFormat;<br>import java.util.Date;</p>
+<p>/**</p>
+<ul>
+<li><p>类描述：发送验证码工具类<br>*/<br>public class QueryUtil {</p>
+<p> public static String queryArguments(String ACCOUNT_SID,String AUTH_TOKEN, String smsContent,String to) {</p>
+<pre><code>String timestamp = getTimestamp(); //时间戳
+String sig =  MD5(ACCOUNT_SID,AUTH_TOKEN,timestamp);//签名认证
+
+String str = &quot;accountSid=&quot;+ACCOUNT_SID+&quot;&amp;smsContent=&quot;+
+        smsContent+&quot;&amp;to=&quot;+to+&quot;&amp;timestamp=&quot;+timestamp+&quot;&amp;sig=&quot;+sig;
+return str;
+</code></pre><p> }<br> /**</p>
+<ul>
+<li>MD5加密</li>
+<li>@param args</li>
+<li><p>@return<br>*/<br>public static String MD5(String… args){ //动态参数<br> StringBuffer result = new StringBuffer();<br> if (args == null || args.length == 0) {</p>
+<pre><code>return &quot;&quot;;
+</code></pre><p> } else {</p>
+<pre><code>StringBuffer str = new StringBuffer();
+for (String string : args) {
+    str.append(string);
+}
+System.out.println(&quot;加密前：\t&quot;+str.toString());
+
+try {
+    MessageDigest digest = MessageDigest.getInstance(&quot;MD5&quot;);
+    byte[] bytes = digest.digest(str.toString().getBytes());
+    for (byte b : bytes) {
+        String hex = Integer.toHexString(b&amp;0xff);  //转化十六进制
+        if (hex.length() == 1) {
+            result.append(&quot;0&quot;+hex);
+        }else{
+            result.append(hex);
+        }
+    }
+
+} catch (NoSuchAlgorithmException e) {
+    e.printStackTrace();
+}
+</code></pre><p> }<br> System.out.println(“加密后：\t”+result.toString());<br> return result.toString();<br>}<br>/*</p>
+</li>
+<li>获取时间戳<br>*/<br>public static String getTimestamp(){<br> SimpleDateFormat sdf = new SimpleDateFormat(“yyyyMMddHHmmss”);<br> Date date = new Date();<br> return sdf.format(date);<br>}</li>
+</ul>
+</li>
+</ul>
+<p>}</p>
+<p> RandUtil类：<br>package util;<br>import java.util.Random;<br>public class RandUtil {<br>public static String getRandNum() {<br>        String randNum = new Random().nextInt(1000000)+””;<br>        System.out.println(“生成”+randNum);<br>        if (randNum.length()!=6) {   //如果生成的不是6位数随机数则返回该方法继续生成<br>            return getRandNum();<br>        }<br>        return randNum;<br>    }<br>}<br>test类：<br>package Test;</p>
+<p>import util.GetMessage;</p>
+<p>public class test {<br>public static void main(String[] args) {<br>GetMessage a=new GetMessage();<br>String result = a.getResult(“手机号”);<br>        System.out.println(“验证码：”+a.randNum+”\t”+result);<br>}</p>
+<p>}</p>
+<p>所需jar包下载：<br>链接：<a href="https://pan.baidu.com/s/1VR73YIQXQE3paeqFnIePMg" target="_blank" rel="noopener">https://pan.baidu.com/s/1VR73YIQXQE3paeqFnIePMg</a> ;<br>提取码：s29m </p>
+<p>项目下载：<a href="https://download.csdn.net/download/qq_37493851/10852363" target="_blank" rel="noopener">https://download.csdn.net/download/qq_37493851/10852363</a></p>
           
       
-    </excerpt></p></div>
+    </div>
     
     <div class="article-info article-info-index">
       
@@ -318,7 +535,7 @@
       
       
         <p class="article-more-link">
-          <a href="/2015/12/03/测试/#more">阅读全文 >></a>
+          <a href="/2015/12/03/短信登入/#more">阅读全文 >></a>
         </p>
       
       <div class="clearfix"></div>
@@ -344,7 +561,7 @@
         <div id="footer-info">
             <div class="footer-left">
                 <i class="fa fa-copyright"></i> 
-                2018 JackWang
+                2018-2019 JackWang
             </div>
             <div class="footer-right">
                 <a href="http://hexo.io/" target="_blank" title="快速、简洁且高效的博客框架">Hexo</a>  Theme <a href="https://github.com/MOxFIVE/hexo-theme-yelee" target="_blank" title="简而不减 Hexo 双栏博客主题  v3.5">Yelee</a> by MOxFIVE <i class="fa fa-heart animated infinite pulse"></i>
