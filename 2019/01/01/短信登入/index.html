@@ -23,7 +23,7 @@
 <meta property="og:site_name" content="JackWang的个人博客">
 <meta property="og:description" content="开始教学 进入秒嘀科技：前往注册 注册一个账号  注册好之后，点击 用户中心 -&amp;gt; 账户管理，就会进入如下界面 （顺便提一下，新注册的用户，平台会免费赠送你10元，足够大家学习和使用了，所以不用担心需要充钱）  你需要做的就是获取你自己的 ACCOUNT SID 和 AUTH TOKEN图片">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-01-02T16:12:58.706Z">
+<meta property="og:updated_time" content="2019-01-02T20:01:20.159Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="短信验证登入实现">
 <meta name="twitter:description" content="开始教学 进入秒嘀科技：前往注册 注册一个账号  注册好之后，点击 用户中心 -&amp;gt; 账户管理，就会进入如下界面 （顺便提一下，新注册的用户，平台会免费赠送你10元，足够大家学习和使用了，所以不用担心需要充钱）  你需要做的就是获取你自己的 ACCOUNT SID 和 AUTH TOKEN图片">
@@ -102,7 +102,8 @@
     </script>
 
 
-</head></html>
+</head>
+</html>
 <body>
   <div id="container">
     <div class="left-col">
@@ -164,9 +165,9 @@
                     <nav class="header-menu">
                         <ul>
                         
-                            <li><a href="/">主页</a></li>
+                            <li><a href="/archives/">归档</a></li>
                         
-                            <li><a href="/archives/">所有文章</a></li>
+                            <li><a href="/">主页</a></li>
                         
                             <li><a href="/tags/">标签云</a></li>
                         
@@ -181,9 +182,9 @@
                             
                                 <a class="fa 新浪微博" href="http://weibo.com/wangbing003" title="新浪微博"></a>
                             
-                                <a class="fa 博客园" href="https://www.cnblogs.com/" title="博客园"></a>
+                                <a class="fa GitHub" href="https://github.com/lengxi001" title="GitHub"></a>
                             
-                                <a class="fa 网易云音乐" href="https://music.163.com/" title="网易云音乐"></a>
+                                <a class="fa 博客园" href="https://www.cnblogs.com/" title="博客园"></a>
                             
                                 <a class="fa QQ" href="http://wpa.qq.com/msgrd?v=3&uin=1613744953&site=qq&menu=yes" title="QQ"></a>
                             
@@ -220,6 +221,7 @@
         </div>
     </header>                
 </div>
+
     </div>
     <div class="mid-col">
       <nav id="mobile-nav">
@@ -241,9 +243,9 @@
             <nav class="header-menu">
                 <ul>
                 
-                    <li><a href="/">主页</a></li>
+                    <li><a href="/archives/">归档</a></li>
                 
-                    <li><a href="/archives/">所有文章</a></li>
+                    <li><a href="/">主页</a></li>
                 
                     <li><a href="/tags/">标签云</a></li>
                 
@@ -259,9 +261,9 @@
                             
                                 <a class="fa 新浪微博" target="_blank" href="http://weibo.com/wangbing003" title="新浪微博"></a>
                             
-                                <a class="fa 博客园" target="_blank" href="https://www.cnblogs.com/" title="博客园"></a>
+                                <a class="fa GitHub" target="_blank" href="https://github.com/lengxi001" title="GitHub"></a>
                             
-                                <a class="fa 网易云音乐" target="_blank" href="https://music.163.com/" title="网易云音乐"></a>
+                                <a class="fa 博客园" target="_blank" href="https://www.cnblogs.com/" title="博客园"></a>
                             
                                 <a class="fa QQ" target="_blank" href="http://wpa.qq.com/msgrd?v=3&uin=1613744953&site=qq&menu=yes" title="QQ"></a>
                             
@@ -318,10 +320,13 @@
 <li><p>注册好之后，点击 用户中心 -&gt; 账户管理，就会进入如下界面 （顺便提一下，新注册的用户，平台会免费赠送你10元，足够大家学习和使用了，所以不用担心需要充钱）  你需要做的就是获取你自己的 ACCOUNT SID 和 AUTH TOKEN<br>图片</p>
 <a id="more"></a>
 </li>
-<li><p>需要在秒嘀上新建一个发送手机验证码的模板，点击 配置管理 -&gt; 验证码短信模板，就会进入如下界面<br>图片<br>4.点击“新建模板”按钮， 填写好模板名称、短信签名 和 短信内容（短信内容可以选择 验证码通知短信模板 或者 自己编写短信内容），点击“提交审核”按钮即可，界面如下<br>图片<br>5.审核成功后点击右上角API文档&gt;Https api&gt;验证码通知短信&gt;复制请求地址，如<a href="https://api.miaodiyun.com/****0822/industrySMS/sendSMS" target="_blank" rel="noopener">https://api.miaodiyun.com/****0822/industrySMS/sendSMS</a></p>
+<li><p>需要在秒嘀上新建一个发送手机验证码的模板，点击 配置管理 -&gt; 验证码短信模板，就会进入如下界面<br>图片</p>
 </li>
-<li><p>接下来就是代码了，把我圈住的地方改成自己的就行，其他的不用动<br>项目目录结构，短信发送所需的类在util包里<br>图片</p>
-</li>
+</ol>
+<p>4.点击“新建模板”按钮， 填写好模板名称、短信签名 和 短信内容（短信内容可以选择 验证码通知短信模板 或者 自己编写短信内容），点击“提交审核”按钮即可，界面如下<br>图片</p>
+<p>5.审核成功后点击右上角API文档&gt;Https api&gt;验证码通知短信&gt;复制请求地址，如<a href="https://api.miaodiyun.com/****0822/industrySMS/sendSMS" target="_blank" rel="noopener">https://api.miaodiyun.com/****0822/industrySMS/sendSMS</a></p>
+<ol start="6">
+<li>接下来就是代码了，把我圈住的地方改成自己的就行，其他的不用动<br>项目目录结构，短信发送所需的类在util包里<br>图片</li>
 </ol>
 <p>图片</p>
 <h3 id="GetMessage类："><a href="#GetMessage类：" class="headerlink" title="GetMessage类："></a>GetMessage类：</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br></pre></td><td class="code"><pre><span class="line">package util;</span><br><span class="line"></span><br><span class="line">import net.sf.json.JSONObject;</span><br><span class="line">import java.io.BufferedReader;</span><br><span class="line">import java.io.InputStream;</span><br><span class="line">import java.io.InputStreamReader;</span><br><span class="line">import java.io.OutputStreamWriter;</span><br><span class="line">import java.net.URL;</span><br><span class="line">import java.net.URLConnection;</span><br><span class="line"></span><br><span class="line">/**</span><br><span class="line"> * 获取短信验证码类</span><br><span class="line"> * @author LB_lfx</span><br><span class="line"> *</span><br><span class="line"> *</span><br><span class="line"> */</span><br><span class="line">public class GetMessage &#123;</span><br><span class="line">    /**</span><br><span class="line">     * 用户ID</span><br><span class="line">     */</span><br><span class="line">    public static final String ACCOUNT_SID = <span class="string">""</span>;//这里填写你在平台里的ACOUNT_SID</span><br><span class="line"></span><br><span class="line">    /**</span><br><span class="line">     * 密钥</span><br><span class="line">     */</span><br><span class="line">    public static final String AUTH_TOKEN = <span class="string">""</span>;//这里填写你在平台里的AUTH_TOKEN</span><br><span class="line"></span><br><span class="line">    /**</span><br><span class="line">     * 请求地址前半部分</span><br><span class="line">     */</span><br><span class="line">    public static final String BASE_URL = <span class="string">""</span>;//上面说的请求地址</span><br><span class="line"></span><br><span class="line">    public static  String randNum = RandUtil.getRandNum();</span><br><span class="line">                                          //必须与自己建的模板一样，切记！！！</span><br><span class="line">    public  static String smsContent = <span class="string">"【分多多】尊敬的用户，您的验证码是"</span>+randNum+<span class="string">",请在规定时间内完成验证，如非本人操作请忽略此短信。"</span>;</span><br><span class="line">    /**</span><br><span class="line">     * (获取短信验证码)</span><br><span class="line">     * @param to</span><br><span class="line">     * @<span class="built_in">return</span> String</span><br><span class="line">     */</span><br><span class="line">    public static String getResult(String to) &#123;</span><br><span class="line">        randNum = RandUtil.getRandNum();</span><br><span class="line">        String smsContent = <span class="string">"【分多多】尊敬的用户，您的验证码是"</span>+randNum+<span class="string">",请在规定时间内完成验证，如非本人操作请忽略此短信。"</span>;            //这里的randNum 和 smsContent和上面的静态变量是一样的，可删除可保留</span><br><span class="line">        String args = QueryUtil.queryArguments(ACCOUNT_SID, AUTH_TOKEN, smsContent, to);</span><br><span class="line">        OutputStreamWriter out = null;</span><br><span class="line">        InputStream <span class="keyword">in</span> = null;</span><br><span class="line">        BufferedReader br = null;</span><br><span class="line">        StringBuffer sb = new StringBuffer();</span><br><span class="line"></span><br><span class="line">        try &#123;</span><br><span class="line">            URL url = new URL(BASE_URL);</span><br><span class="line">            URLConnection connection = url.openConnection(); //打开链接</span><br><span class="line">            connection.setDoOutput(<span class="literal">true</span>);</span><br><span class="line">            connection.setDoInput(<span class="literal">true</span>);</span><br><span class="line">            connection.setConnectTimeout(5000);  //设置链接超时</span><br><span class="line">            connection.setReadTimeout(10000);    //设置读取超时</span><br><span class="line"></span><br><span class="line">            //提交数据</span><br><span class="line">            out = new OutputStreamWriter(connection.getOutputStream(),<span class="string">"utf-8"</span>);</span><br><span class="line">            out.write(args);</span><br><span class="line">            out.flush();</span><br><span class="line"></span><br><span class="line">            //读取返回数据</span><br><span class="line">            br = new BufferedReader(new InputStreamReader(connection.getInputStream()));</span><br><span class="line">            String line = <span class="string">""</span>;</span><br><span class="line">            <span class="keyword">while</span>((line = br.readLine())!=null)&#123;</span><br><span class="line">                sb.append(line);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125; catch (Exception e) &#123;</span><br><span class="line">            e.printStackTrace();</span><br><span class="line">        &#125;finally &#123;</span><br><span class="line">            try &#123;</span><br><span class="line">                <span class="keyword">if</span> (br!=null) &#123;</span><br><span class="line">                    br.close();</span><br><span class="line">                &#125;</span><br><span class="line">                <span class="keyword">if</span> (out!=null) &#123;</span><br><span class="line">                    out.close();</span><br><span class="line">                &#125;</span><br><span class="line">            &#125; catch (Exception e2) &#123;</span><br><span class="line">                e2.printStackTrace();</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        JSONObject jsonObject = JSONObject.fromObject(sb.toString());</span><br><span class="line">        System.out.println(jsonObject);</span><br><span class="line">        Object object = jsonObject.get(<span class="string">"respCode"</span>);</span><br><span class="line">        System.out.println(<span class="string">"状态码："</span>+object+<span class="string">"验证码："</span>+randNum);</span><br><span class="line">        System.out.println(!object.equals(<span class="string">"00000"</span>));</span><br><span class="line">        <span class="keyword">if</span> (!object.equals(<span class="string">"00000"</span>)) &#123;</span><br><span class="line">            <span class="built_in">return</span> object.toString();</span><br><span class="line">        &#125;<span class="keyword">else</span>&#123;</span><br><span class="line"></span><br><span class="line">            <span class="built_in">return</span> randNum;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
@@ -429,7 +434,7 @@ String result = a.getResult(<span class="string">"手机号"</span>);
         <p><span>本文标题:</span><a href="/2019/01/01/短信登入/">短信验证登入实现</a></p>
         <p><span>文章作者:</span><a href="/" title="回到主页">JackWang</a></p>
         <p><span>发布时间:</span>2019-01-01, 00:00:00</p>
-        <p><span>最后更新:</span>2019-01-03, 00:12:58</p>
+        <p><span>最后更新:</span>2019-01-03, 04:01:20</p>
         <p>
             <span>原始链接:</span><a class="post-url" href="/2019/01/01/短信登入/" title="短信验证登入实现">http://www.wangbing003.top/2019/01/01/短信登入/</a>
             <span class="copy-path" data-clipboard-text="原文: http://www.wangbing003.top/2019/01/01/短信登入/　　作者: JackWang" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
@@ -455,6 +460,9 @@ String result = a.getResult(<span class="string">"手机号"</span>);
 
   
 </article>
+
+
+
 
     <div id="toc" class="toc-article">
         <strong class="toc-title">文章目录</strong>
@@ -484,20 +492,6 @@ String result = a.getResult(<span class="string">"手机号"</span>);
     
 <div class="share">
     
-        <div class="bdsharebuttonbox">
-            <a href="#" class="fa fa-twitter bds_twi" data-cmd="twi" title="分享到推特"></a>
-            <a href="#" class="fa fa-weibo bds_tsina" data-cmd="tsina" title="分享到新浪微博"></a>
-            <a href="#" class="fa fa-qq bds_sqq" data-cmd="sqq" title="分享给 QQ 好友"></a>
-            <a href="#" class="fa fa-files-o bds_copy" data-cmd="copy" title="复制网址"></a>
-            <a href="#" class="fa fa fa-envelope-o bds_mail" data-cmd="mail" title="通过邮件分享"></a>
-            <a href="#" class="fa fa-weixin bds_weixin" data-cmd="weixin" title="生成文章二维码"></a>
-            <a href="#" class="fa fa-share-alt bds_more" data-cmd="more"></a>
-        </div>
-        <script>
-            window._bd_share_config={
-                "common":{"bdSnsKey":{},"bdText":"短信验证登入实现　| JackWang的个人博客　","bdMini":"2","bdMiniList":false,"bdPic":"","bdStyle":"0","bdSize":"24"},"share":{}};with(document)0[(getElementsByTagName('head')[0]||body).appendChild(createElement('script')).src='http://bdimg.share.baidu.com/static/api/js/share.js?v=89860593.js?cdnversion='+~(-new Date()/36e5)];
-        </script>
-    
 
     
 </div>
@@ -508,6 +502,25 @@ String result = a.getResult(<span class="string">"手机号"</span>);
 
 
 
+    
+        <!-- 来必力City版安装代码 -->
+<div id="lv-container" data-id="city" data-uid="MTAyMC80MTk1My8xODQ5OQ==">
+    <script type="text/javascript">
+       (function(d, s) {
+           var j, e = d.getElementsByTagName(s)[0];
+    
+           if (typeof LivereTower === 'function') { return; }
+    
+           j = d.createElement(s);
+           j.src = 'https://cdn-city.livere.com/js/embed.dist.js';
+           j.async = true;
+    
+           e.parentNode.insertBefore(j, e);
+       })(document, 'script');
+    </script>
+    <noscript>为正常使用来必力评论功能请激活JavaScript</noscript>
+    </div>
+    <!-- City版安装代码已完成 -->      
     
 
 
@@ -539,7 +552,23 @@ String result = a.getResult(<span class="string">"手机号"</span>);
       <footer id="footer">
         <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js">
         </script>
-
+        <span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span>
+        <script>
+            var now = new Date(); 
+            function createtime() { 
+                var grt= new Date("02/14/2018 12:49:00");//此处修改你的建站时间或者网站上线时间 
+                now.setTime(now.getTime()+250); 
+                days = (now - grt ) / 1000 / 60 / 60 / 24; dnum = Math.floor(days); 
+                hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours); 
+                if(String(hnum).length ==1 ){hnum = "0" + hnum;} minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum); 
+                mnum = Math.floor(minutes); if(String(mnum).length ==1 ){mnum = "0" + mnum;} 
+                seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum); 
+                snum = Math.round(seconds); if(String(snum).length ==1 ){snum = "0" + snum;} 
+                document.getElementById("timeDate").innerHTML = "本站已安全运行 "+dnum+" 天 "; 
+                document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒"; 
+            } 
+        setInterval("createtime()",250);
+        </script>
 
           <span id="busuanzi_container_page_pv">
                 本文总阅读量<span id="busuanzi_value_page_pv"></span>次
@@ -552,13 +581,18 @@ String result = a.getResult(<span class="string">"手机号"</span>);
                 2018-2019 JackWang
             </div>
             <div class="footer-right">
-                <a href="http://hexo.io/" target="_blank" title="快速、简洁且高效的博客框架">Hexo</a>  Theme <a href="https://github.com/lengxi001/JackWang" target="_blank" title="简而不减 Hexo 双栏博客主题  v3.5">Yelee</a> by JackWang <i class="fa fa-heart animated infinite pulse"></i>
+                <a href="http://hexo.io/" target="_blank" title="快速、简洁且高效的博客框架">Hexo</a>  Theme <a href="https://github.com/lengxi001/JackWang" target="_blank" title="简而不减 Hexo 双栏博客主题  v3.5">Yelee</a> by JackWang 
             </div>
         </div>
         
             <div class="visit">
                 
                 
+                
+                    <span id="busuanzi_container_page_pv" style="display:none">
+                        <span id="page-visit" title="本页阅读量"><i class="fa fa-eye animated infinite pulse" aria-hidden="true"></i><span id="busuanzi_value_page_pv"></span>
+                        </span>
+                    </span>
                 
             </div>
         
@@ -639,7 +673,11 @@ MathJax.Hub.Queue(function() {
     </script>
 
 <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
-</script>
++</script>
++<script type="text/javascript" src="/resources/love.js"></script>
++<script type="text/javascript" src="/resources/float.js"></script>
++<script type="text/javascript" src="/resources/typewriter.js"></script>
+<script type="text/javascript" color="0,104,183" opacity="1" zindex="-1" count="50" src="/resources/particle.js"></script>
   </div>
 </body>
 </html>
