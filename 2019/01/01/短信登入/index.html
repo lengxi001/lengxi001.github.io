@@ -15,17 +15,18 @@
 
 
 
-<meta name="description" content="https://download.csdn.net/download/qq_37493851/10852363  进入秒嘀科技（http://www.miaodiyun.com/），注册一个账号  注册好之后，点击 用户中心 -&amp;gt; 账户管理，就会进入如下界面 （顺便提一下，新注册的用户，平台会免费赠送你10元，足够大家学习和使用了，所以不用担心需要充钱）  你需要做的就是获取你自己的 ACC">
+<meta name="description" content="开始教学 进入秒嘀科技：前往注册 注册一个账号  注册好之后，点击 用户中心 -&amp;gt; 账户管理，就会进入如下界面 （顺便提一下，新注册的用户，平台会免费赠送你10元，足够大家学习和使用了，所以不用担心需要充钱）  你需要做的就是获取你自己的 ACCOUNT SID 和 AUTH TOKEN图片">
+<meta name="keywords" content="java">
 <meta property="og:type" content="article">
 <meta property="og:title" content="短信验证登入实现">
 <meta property="og:url" content="http://www.wangbing003.top/2019/01/01/短信登入/index.html">
 <meta property="og:site_name" content="JackWang的个人博客">
-<meta property="og:description" content="https://download.csdn.net/download/qq_37493851/10852363  进入秒嘀科技（http://www.miaodiyun.com/），注册一个账号  注册好之后，点击 用户中心 -&amp;gt; 账户管理，就会进入如下界面 （顺便提一下，新注册的用户，平台会免费赠送你10元，足够大家学习和使用了，所以不用担心需要充钱）  你需要做的就是获取你自己的 ACC">
+<meta property="og:description" content="开始教学 进入秒嘀科技：前往注册 注册一个账号  注册好之后，点击 用户中心 -&amp;gt; 账户管理，就会进入如下界面 （顺便提一下，新注册的用户，平台会免费赠送你10元，足够大家学习和使用了，所以不用担心需要充钱）  你需要做的就是获取你自己的 ACCOUNT SID 和 AUTH TOKEN图片">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-12-31T21:45:38.104Z">
+<meta property="og:updated_time" content="2019-01-02T14:02:23.378Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="短信验证登入实现">
-<meta name="twitter:description" content="https://download.csdn.net/download/qq_37493851/10852363  进入秒嘀科技（http://www.miaodiyun.com/），注册一个账号  注册好之后，点击 用户中心 -&amp;gt; 账户管理，就会进入如下界面 （顺便提一下，新注册的用户，平台会免费赠送你10元，足够大家学习和使用了，所以不用担心需要充钱）  你需要做的就是获取你自己的 ACC">
+<meta name="twitter:description" content="开始教学 进入秒嘀科技：前往注册 注册一个账号  注册好之后，点击 用户中心 -&amp;gt; 账户管理，就会进入如下界面 （顺便提一下，新注册的用户，平台会免费赠送你10元，足够大家学习和使用了，所以不用担心需要充钱）  你需要做的就是获取你自己的 ACCOUNT SID 和 AUTH TOKEN图片">
 
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
 
@@ -73,7 +74,7 @@
         isCategory: false,
         fancybox_js: "//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.min.js",
         scrollreveal: "//cdn.bootcss.com/scrollReveal.js/3.1.4/scrollreveal.min.js",
-        search: true
+        search: false
     }
 </script>
 
@@ -110,13 +111,6 @@
         
 
         
-            <form id="search-form">
-            <input type="text" id="local-search-input" name="q" placeholder="search..." class="search form-control" autocomplete="off" autocorrect="off" searchonload="true">
-            <i class="fa fa-times" onclick="resetSearch()"></i>
-            </form>
-            <div id="local-search-result"></div>
-            <p class="no-result">No results found <i class="fa fa-spinner fa-pulse"></i></p>
-        
 
 
         
@@ -137,11 +131,6 @@
                         </div>
                         
                         
-                        <div class="icon-wrap icon-me hide" data-idx="3">
-                            <div class="user"></div>
-                            <div class="shoulder"></div>
-                        </div>
-                        
                     </div>
                     
                 </div>
@@ -153,8 +142,6 @@
                         
                         <li>友情链接</li>
                         
-                        
-                        <li>关于我</li>
                         
                     </ul>
                 </div>
@@ -182,7 +169,7 @@
                             
                                 <a class="fa Email" href="mailto:wangbing1027@foxmail.com" title="Email"></a>
                             
-                                <a class="fa 新浪微博" href="https://weibo.com/u/5636135930" title="新浪微博"></a>
+                                <a class="fa 新浪微博" href="http://weibo.com/wangbing003" title="新浪微博"></a>
                             
                                 <a class="fa 博客园" href="https://www.cnblogs.com/" title="博客园"></a>
                             
@@ -197,7 +184,7 @@
                 
                 <section class="switch-part switch-part2">
                     <div class="widget tagcloud" id="js-tagcloud">
-                        
+                        <ul class="tag-list"><li class="tag-list-item"><a class="tag-list-link" href="/tags/hexo/">hexo</a></li><li class="tag-list-item"><a class="tag-list-link" href="/tags/java/">java</a></li></ul>
                     </div>
                 </section>
                 
@@ -212,16 +199,12 @@
                     
                       <a class="main-nav-link switch-friends-link" href="http://t.cn/RrXWP6M">Personal space</a>
                     
+                      <a class="main-nav-link switch-friends-link" href="https://jenkinwang.github.io">Jenkin Wang</a>
+                    
                     </div>
                 </section>
                 
 
-                
-                
-                <section class="switch-part switch-part4">
-                
-                    <div id="js-aboutme">爱学习的程序猿</div>
-                </section>
                 
             </div>
         </div>
@@ -264,7 +247,7 @@
                             
                                 <a class="fa Email" target="_blank" href="mailto:wangbing1027@foxmail.com" title="Email"></a>
                             
-                                <a class="fa 新浪微博" target="_blank" href="https://weibo.com/u/5636135930" title="新浪微博"></a>
+                                <a class="fa 新浪微博" target="_blank" href="http://weibo.com/wangbing003" title="新浪微博"></a>
                             
                                 <a class="fa 博客园" target="_blank" href="https://www.cnblogs.com/" title="博客园"></a>
                             
@@ -305,8 +288,16 @@
       
       <div class="article-info article-info-post">
         
+    <div class="article-category tagcloud">
+    <a class="article-category-link" href="/categories/java/">java</a>
+    </div>
+
 
         
+    <div class="article-tag tagcloud">
+        <ul class="article-tag-list"><li class="article-tag-list-item"><a class="article-tag-list-link" href="/tags/java/">java</a></li></ul>
+    </div>
+
         <div class="clearfix"></div>
       </div>
       
@@ -314,162 +305,114 @@
     <div class="article-entry" itemprop="articleBody">
       
           
-        <p><excerpt in="" index="" |="" 首页摘要=""><br><a href="https://download.csdn.net/download/qq_37493851/10852363" target="_blank" rel="noopener">https://download.csdn.net/download/qq_37493851/10852363</a></excerpt></p>
-<ol>
-<li><p>进入秒嘀科技（<a href="http://www.miaodiyun.com/），注册一个账号" target="_blank" rel="noopener">http://www.miaodiyun.com/），注册一个账号</a></p>
+        <p><excerpt in="" index="" |="" 首页摘要=""> </excerpt></p>
+<h2 id="开始教学"><a href="#开始教学" class="headerlink" title="开始教学"></a>开始教学</h2><ol>
+<li><p>进入秒嘀科技：<a href="http://www.miaodiyun.com/" target="_blank" rel="noopener">前往注册</a><br> 注册一个账号</p>
 </li>
 <li><p>注册好之后，点击 用户中心 -&gt; 账户管理，就会进入如下界面 （顺便提一下，新注册的用户，平台会免费赠送你10元，足够大家学习和使用了，所以不用担心需要充钱）  你需要做的就是获取你自己的 ACCOUNT SID 和 AUTH TOKEN<br>图片</p>
+<a id="more"></a>
 </li>
 <li><p>需要在秒嘀上新建一个发送手机验证码的模板，点击 配置管理 -&gt; 验证码短信模板，就会进入如下界面<br>图片<br>4.点击“新建模板”按钮， 填写好模板名称、短信签名 和 短信内容（短信内容可以选择 验证码通知短信模板 或者 自己编写短信内容），点击“提交审核”按钮即可，界面如下<br>图片<br>5.审核成功后点击右上角API文档&gt;Https api&gt;验证码通知短信&gt;复制请求地址，如<a href="https://api.miaodiyun.com/****0822/industrySMS/sendSMS" target="_blank" rel="noopener">https://api.miaodiyun.com/****0822/industrySMS/sendSMS</a></p>
 </li>
 <li><p>接下来就是代码了，把我圈住的地方改成自己的就行，其他的不用动<br>项目目录结构，短信发送所需的类在util包里<br>图片</p>
 </li>
 </ol>
-<p>图片<br>GetMessage类：<br>package util;</p>
-<p>import net.sf.json.JSONObject;</p>
-<p>import java.io.BufferedReader;<br>import java.io.InputStream;<br>import java.io.InputStreamReader;<br>import java.io.OutputStreamWriter;<br>import java.net.URL;<br>import java.net.URLConnection;</p>
-<p>/**</p>
-<ul>
-<li>获取短信验证码类</li>
-<li>@author LB_lfx<br><em>
-</em><br>*/<br>public class GetMessage {</li>
-</ul>
-<pre><code>/**
- * 用户ID
- */
-public static final String ACCOUNT_SID = &quot;&quot;;//这里填写你在平台里的ACOUNT_SID
+<p>图片</p>
+<h3 id="GetMessage类："><a href="#GetMessage类：" class="headerlink" title="GetMessage类："></a>GetMessage类：</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br></pre></td><td class="code"><pre><span class="line">package util;</span><br><span class="line"></span><br><span class="line">import net.sf.json.JSONObject;</span><br><span class="line">import java.io.BufferedReader;</span><br><span class="line">import java.io.InputStream;</span><br><span class="line">import java.io.InputStreamReader;</span><br><span class="line">import java.io.OutputStreamWriter;</span><br><span class="line">import java.net.URL;</span><br><span class="line">import java.net.URLConnection;</span><br><span class="line"></span><br><span class="line">/**</span><br><span class="line"> * 获取短信验证码类</span><br><span class="line"> * @author LB_lfx</span><br><span class="line"> *</span><br><span class="line"> *</span><br><span class="line"> */</span><br><span class="line">public class GetMessage &#123;</span><br><span class="line">    /**</span><br><span class="line">     * 用户ID</span><br><span class="line">     */</span><br><span class="line">    public static final String ACCOUNT_SID = <span class="string">""</span>;//这里填写你在平台里的ACOUNT_SID</span><br><span class="line"></span><br><span class="line">    /**</span><br><span class="line">     * 密钥</span><br><span class="line">     */</span><br><span class="line">    public static final String AUTH_TOKEN = <span class="string">""</span>;//这里填写你在平台里的AUTH_TOKEN</span><br><span class="line"></span><br><span class="line">    /**</span><br><span class="line">     * 请求地址前半部分</span><br><span class="line">     */</span><br><span class="line">    public static final String BASE_URL = <span class="string">""</span>;//上面说的请求地址</span><br><span class="line"></span><br><span class="line">    public static  String randNum = RandUtil.getRandNum();</span><br><span class="line">                                          //必须与自己建的模板一样，切记！！！</span><br><span class="line">    public  static String smsContent = <span class="string">"【分多多】尊敬的用户，您的验证码是"</span>+randNum+<span class="string">",请在规定时间内完成验证，如非本人操作请忽略此短信。"</span>;</span><br><span class="line">    /**</span><br><span class="line">     * (获取短信验证码)</span><br><span class="line">     * @param to</span><br><span class="line">     * @<span class="built_in">return</span> String</span><br><span class="line">     */</span><br><span class="line">    public static String getResult(String to) &#123;</span><br><span class="line">        randNum = RandUtil.getRandNum();</span><br><span class="line">        String smsContent = <span class="string">"【分多多】尊敬的用户，您的验证码是"</span>+randNum+<span class="string">",请在规定时间内完成验证，如非本人操作请忽略此短信。"</span>;            //这里的randNum 和 smsContent和上面的静态变量是一样的，可删除可保留</span><br><span class="line">        String args = QueryUtil.queryArguments(ACCOUNT_SID, AUTH_TOKEN, smsContent, to);</span><br><span class="line">        OutputStreamWriter out = null;</span><br><span class="line">        InputStream <span class="keyword">in</span> = null;</span><br><span class="line">        BufferedReader br = null;</span><br><span class="line">        StringBuffer sb = new StringBuffer();</span><br><span class="line"></span><br><span class="line">        try &#123;</span><br><span class="line">            URL url = new URL(BASE_URL);</span><br><span class="line">            URLConnection connection = url.openConnection(); //打开链接</span><br><span class="line">            connection.setDoOutput(<span class="literal">true</span>);</span><br><span class="line">            connection.setDoInput(<span class="literal">true</span>);</span><br><span class="line">            connection.setConnectTimeout(5000);  //设置链接超时</span><br><span class="line">            connection.setReadTimeout(10000);    //设置读取超时</span><br><span class="line"></span><br><span class="line">            //提交数据</span><br><span class="line">            out = new OutputStreamWriter(connection.getOutputStream(),<span class="string">"utf-8"</span>);</span><br><span class="line">            out.write(args);</span><br><span class="line">            out.flush();</span><br><span class="line"></span><br><span class="line">            //读取返回数据</span><br><span class="line">            br = new BufferedReader(new InputStreamReader(connection.getInputStream()));</span><br><span class="line">            String line = <span class="string">""</span>;</span><br><span class="line">            <span class="keyword">while</span>((line = br.readLine())!=null)&#123;</span><br><span class="line">                sb.append(line);</span><br><span class="line">            &#125;</span><br><span class="line">        &#125; catch (Exception e) &#123;</span><br><span class="line">            e.printStackTrace();</span><br><span class="line">        &#125;finally &#123;</span><br><span class="line">            try &#123;</span><br><span class="line">                <span class="keyword">if</span> (br!=null) &#123;</span><br><span class="line">                    br.close();</span><br><span class="line">                &#125;</span><br><span class="line">                <span class="keyword">if</span> (out!=null) &#123;</span><br><span class="line">                    out.close();</span><br><span class="line">                &#125;</span><br><span class="line">            &#125; catch (Exception e2) &#123;</span><br><span class="line">                e2.printStackTrace();</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        JSONObject jsonObject = JSONObject.fromObject(sb.toString());</span><br><span class="line">        System.out.println(jsonObject);</span><br><span class="line">        Object object = jsonObject.get(<span class="string">"respCode"</span>);</span><br><span class="line">        System.out.println(<span class="string">"状态码："</span>+object+<span class="string">"验证码："</span>+randNum);</span><br><span class="line">        System.out.println(!object.equals(<span class="string">"00000"</span>));</span><br><span class="line">        <span class="keyword">if</span> (!object.equals(<span class="string">"00000"</span>)) &#123;</span><br><span class="line">            <span class="built_in">return</span> object.toString();</span><br><span class="line">        &#125;<span class="keyword">else</span>&#123;</span><br><span class="line"></span><br><span class="line">            <span class="built_in">return</span> randNum;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<h3 id="QueryUtil-类："><a href="#QueryUtil-类：" class="headerlink" title="QueryUtil 类："></a>QueryUtil 类：</h3><pre><code class="bash">package util;
+import java.security.MessageDigest;
+import java.security.NoSuchAlgorithmException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 
 /**
- * 密钥
+ * 类描述：发送验证码工具类
  */
-public static final String AUTH_TOKEN = &quot;&quot;;//这里填写你在平台里的AUTH_TOKEN
+public class QueryUtil {
 
-/**
- * 请求地址前半部分
- */
-public static final String BASE_URL = &quot;&quot;;//上面说的请求地址
+    public static String queryArguments(String ACCOUNT_SID,String AUTH_TOKEN, String smsContent,String to) {
 
-public static  String randNum = RandUtil.getRandNum();
-                                      //必须与自己建的模板一样，切记！！！
-public  static String smsContent = &quot;【分多多】尊敬的用户，您的验证码是&quot;+randNum+&quot;,请在规定时间内完成验证，如非本人操作请忽略此短信。&quot;;
-/**
- * (获取短信验证码)
- * @param to
- * @return String
- */
-public static String getResult(String to) {
-    randNum = RandUtil.getRandNum();
-    String smsContent = &quot;【分多多】尊敬的用户，您的验证码是&quot;+randNum+&quot;,请在规定时间内完成验证，如非本人操作请忽略此短信。&quot;;            //这里的randNum 和 smsContent和上面的静态变量是一样的，可删除可保留
-    String args = QueryUtil.queryArguments(ACCOUNT_SID, AUTH_TOKEN, smsContent, to);
-    OutputStreamWriter out = null;
-    InputStream in = null;
-    BufferedReader br = null;
-    StringBuffer sb = new StringBuffer();
+        String timestamp = getTimestamp(); //时间戳
+        String sig =  MD5(ACCOUNT_SID,AUTH_TOKEN,timestamp);//签名认证
 
-
-    try {
-        URL url = new URL(BASE_URL);
-        URLConnection connection = url.openConnection(); //打开链接
-        connection.setDoOutput(true);
-        connection.setDoInput(true);
-        connection.setConnectTimeout(5000);  //设置链接超时
-        connection.setReadTimeout(10000);    //设置读取超时
-
-        //提交数据
-        out = new OutputStreamWriter(connection.getOutputStream(),&quot;utf-8&quot;);
-        out.write(args);
-        out.flush();
-
-        //读取返回数据
-        br = new BufferedReader(new InputStreamReader(connection.getInputStream()));
-        String line = &quot;&quot;;
-        while((line = br.readLine())!=null){
-            sb.append(line);
-        }
-    } catch (Exception e) {
-        e.printStackTrace();
-    }finally {
-        try {
-            if (br!=null) {
-                br.close();
+        String str = <span class="string">"accountSid="</span>+ACCOUNT_SID+<span class="string">"&amp;smsContent="</span>+
+                smsContent+<span class="string">"&amp;to="</span>+to+<span class="string">"&amp;timestamp="</span>+timestamp+<span class="string">"&amp;sig="</span>+sig;
+        <span class="built_in">return</span> str;
+    }
+    /**
+     * MD5加密
+     * @param args
+     * @<span class="built_in">return</span>
+     */
+    public static String MD5(String... args){ //动态参数
+        StringBuffer result = new StringBuffer();
+        <span class="keyword">if</span> (args == null || args.length == 0) {
+            <span class="built_in">return</span> <span class="string">""</span>;
+        } <span class="keyword">else</span> {
+            StringBuffer str = new StringBuffer();
+            <span class="keyword">for</span> (String string : args) {
+                str.append(string);
             }
-            if (out!=null) {
-                out.close();
+            System.out.println(<span class="string">"加密前：\t"</span>+str.toString());
+
+            try {
+                MessageDigest digest = MessageDigest.getInstance(<span class="string">"MD5"</span>);
+                byte[] bytes = digest.digest(str.toString().getBytes());
+                <span class="keyword">for</span> (byte b : bytes) {
+                    String hex = Integer.toHexString(b&amp;0xff);  //转化十六进制
+                    <span class="keyword">if</span> (hex.length() == 1) {
+                        result.append(<span class="string">"0"</span>+hex);
+                    }<span class="keyword">else</span>{
+                        result.append(hex);
+                    }
+                }
+
+            } catch (NoSuchAlgorithmException e) {
+                e.printStackTrace();
             }
-        } catch (Exception e2) {
-            e2.printStackTrace();
         }
+        System.out.println(<span class="string">"加密后：\t"</span>+result.toString());
+        <span class="built_in">return</span> result.toString();
     }
-    JSONObject jsonObject = JSONObject.fromObject(sb.toString());
-    System.out.println(jsonObject);
-    Object object = jsonObject.get(&quot;respCode&quot;);
-    System.out.println(&quot;状态码：&quot;+object+&quot;验证码：&quot;+randNum);
-    System.out.println(!object.equals(&quot;00000&quot;));
-    if (!object.equals(&quot;00000&quot;)) {
-        return object.toString();
-    }else{
-
-        return randNum;
+    /*
+     * 获取时间戳
+     */
+    public static String <span class="function"><span class="title">getTimestamp</span></span>(){
+        SimpleDateFormat sdf = new SimpleDateFormat(<span class="string">"yyyyMMddHHmmss"</span>);
+        Date date = new Date();
+        <span class="built_in">return</span> sdf.format(date);
     }
-
 
 }
-</code></pre><p>}</p>
-<p>QueryUtil 类：<br>package util;</p>
-<p>import java.security.MessageDigest;<br>import java.security.NoSuchAlgorithmException;<br>import java.text.SimpleDateFormat;<br>import java.util.Date;</p>
-<p>/**</p>
-<ul>
-<li><p>类描述：发送验证码工具类<br>*/<br>public class QueryUtil {</p>
-<p> public static String queryArguments(String ACCOUNT_SID,String AUTH_TOKEN, String smsContent,String to) {</p>
-<pre><code>String timestamp = getTimestamp(); //时间戳
-String sig =  MD5(ACCOUNT_SID,AUTH_TOKEN,timestamp);//签名认证
-
-String str = &quot;accountSid=&quot;+ACCOUNT_SID+&quot;&amp;smsContent=&quot;+
-        smsContent+&quot;&amp;to=&quot;+to+&quot;&amp;timestamp=&quot;+timestamp+&quot;&amp;sig=&quot;+sig;
-return str;
-</code></pre><p> }<br> /**</p>
-<ul>
-<li>MD5加密</li>
-<li>@param args</li>
-<li><p>@return<br>*/<br>public static String MD5(String… args){ //动态参数<br> StringBuffer result = new StringBuffer();<br> if (args == null || args.length == 0) {</p>
-<pre><code>return &quot;&quot;;
-</code></pre><p> } else {</p>
-<pre><code>StringBuffer str = new StringBuffer();
-for (String string : args) {
-    str.append(string);
-}
-System.out.println(&quot;加密前：\t&quot;+str.toString());
-
-try {
-    MessageDigest digest = MessageDigest.getInstance(&quot;MD5&quot;);
-    byte[] bytes = digest.digest(str.toString().getBytes());
-    for (byte b : bytes) {
-        String hex = Integer.toHexString(b&amp;0xff);  //转化十六进制
-        if (hex.length() == 1) {
-            result.append(&quot;0&quot;+hex);
-        }else{
-            result.append(hex);
+</code></pre>
+<h3 id="RandUtil类："><a href="#RandUtil类：" class="headerlink" title="RandUtil类："></a>RandUtil类：</h3><pre><code class="bash">package util;
+import java.util.Random;
+public class RandUtil {
+public static String <span class="function"><span class="title">getRandNum</span></span>() {
+        String randNum = new Random().nextInt(1000000)+<span class="string">""</span>;
+        System.out.println(<span class="string">"生成"</span>+randNum);
+        <span class="keyword">if</span> (randNum.length()!=6) {   //如果生成的不是6位数随机数则返回该方法继续生成
+            <span class="built_in">return</span> getRandNum();
         }
+        <span class="built_in">return</span> randNum;
     }
-
-} catch (NoSuchAlgorithmException e) {
-    e.printStackTrace();
 }
-</code></pre><p> }<br> System.out.println(“加密后：\t”+result.toString());<br> return result.toString();<br>}<br>/*</p>
-</li>
-<li>获取时间戳<br>*/<br>public static String getTimestamp(){<br> SimpleDateFormat sdf = new SimpleDateFormat(“yyyyMMddHHmmss”);<br> Date date = new Date();<br> return sdf.format(date);<br>}</li>
-</ul>
-</li>
-</ul>
-<p>}</p>
-<p> RandUtil类：<br>package util;<br>import java.util.Random;<br>public class RandUtil {<br>public static String getRandNum() {<br>        String randNum = new Random().nextInt(1000000)+””;<br>        System.out.println(“生成”+randNum);<br>        if (randNum.length()!=6) {   //如果生成的不是6位数随机数则返回该方法继续生成<br>            return getRandNum();<br>        }<br>        return randNum;<br>    }<br>}<br>test类：<br>package Test;</p>
-<p>import util.GetMessage;</p>
-<p>public class test {<br>public static void main(String[] args) {<br>GetMessage a=new GetMessage();<br>String result = a.getResult(“手机号”);<br>        System.out.println(“验证码：”+a.randNum+”\t”+result);<br>}</p>
-<p>}</p>
-<p>所需jar包下载：<br>链接：<a href="https://pan.baidu.com/s/1VR73YIQXQE3paeqFnIePMg" target="_blank" rel="noopener">https://pan.baidu.com/s/1VR73YIQXQE3paeqFnIePMg</a> ;<br>提取码：s29m </p>
-<p>项目下载：<a href="https://download.csdn.net/download/qq_37493851/10852363" target="_blank" rel="noopener">https://download.csdn.net/download/qq_37493851/10852363</a></p>
-<a id="more"></a>
-<the rest="" of="" contents="" |="" 余下全文=""></the>
+</code></pre>
+<h3 id="test类："><a href="#test类：" class="headerlink" title="test类："></a>test类：</h3><pre><code class="bash">package Test;
+
+import util.GetMessage;
+
+public class <span class="built_in">test</span> {
+public static void main(String[] args) {
+GetMessage a=new GetMessage();
+String result = a.getResult(<span class="string">"手机号"</span>);
+        System.out.println(<span class="string">"验证码："</span>+a.randNum+<span class="string">"\t"</span>+result);
+}
+}
+</code></pre>
+<p>所需jar包下载：<br>链接：<a href="https://pan.baidu.com/s/1VR73YIQXQE3paeqFnIePMg" target="_blank" rel="noopener">前往下载</a><br>提取码：s29m </p>
+<p>项目下载：<a href="https://download.csdn.net/download/qq_37493851/10852363" target="_blank" rel="noopener">前往下载</a></p>
+
       
     </div>
     
@@ -480,7 +423,7 @@ try {
         <p><span>本文标题:</span><a href="/2019/01/01/短信登入/">短信验证登入实现</a></p>
         <p><span>文章作者:</span><a href="/" title="回到主页">JackWang</a></p>
         <p><span>发布时间:</span>2019-01-01, 00:00:00</p>
-        <p><span>最后更新:</span>2019-01-01, 05:45:38</p>
+        <p><span>最后更新:</span>2019-01-02, 22:02:23</p>
         <p>
             <span>原始链接:</span><a class="post-url" href="/2019/01/01/短信登入/" title="短信验证登入实现">http://www.wangbing003.top/2019/01/01/短信登入/</a>
             <span class="copy-path" data-clipboard-text="原文: http://www.wangbing003.top/2019/01/01/短信登入/　　作者: JackWang" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
@@ -497,8 +440,8 @@ try {
         
         
             <div id="article-nav-older" class="article-nav-title">
-                <a href="/2018/12/28/hello-world/">
-                    Hello World
+                <a href="/2018/12/31/hello-world/">
+                    Hexo介绍
                 </a>
             </div>
         
@@ -510,7 +453,7 @@ try {
     <div id="toc" class="toc-article">
         <strong class="toc-title">文章目录</strong>
         
-            
+            <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#开始教学"><span class="toc-number">1.</span> <span class="toc-text">开始教学</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#GetMessage类："><span class="toc-number">1.1.</span> <span class="toc-text">GetMessage类：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#QueryUtil-类："><span class="toc-number">1.2.</span> <span class="toc-text">QueryUtil 类：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#RandUtil类："><span class="toc-number">1.3.</span> <span class="toc-text">RandUtil类：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#test类："><span class="toc-number">1.4.</span> <span class="toc-text">test类：</span></a></li></ol></li></ol>
         
     </div>
     <style>
@@ -560,49 +503,6 @@ try {
 
 
     
-        <section id="comments">
-    <style> aside.comment-bar { margin: auto 30px; }</style>
-    <div id="disqus_thread"></div>
-    <script>
-        var disqus_config = function(){
-            this.page.url = 'http://www.wangbing003.top/2019/01/01/短信登入/';
-            this.page.identifier = '2019/01/01/短信登入/';
-        };
-        var loadComment = function(){
-            var d = document, s = d.createElement('script');
-            s.src = '//.disqus.com/embed.js';
-            s.setAttribute('data-timestamp', +new Date());
-            (d.head || d.body).appendChild(s);
-        }
-    </script>
-    
-    <script> loadComment(); </script>
-
-</section>
-
-
-    
-
-
-
-  
-  <!-- Gitment评论插件通用代码 -->
-<div id="git"></div>
-<link rel="stylesheet" href="https://imsun.github.io/gitment/style/default.css">
-<script src="https://imsun.github.io/gitment/dist/gitment.browser.js"></script>
-<script>
-var gitment = new Gitment({
-  owner: "lengxi001",//github用户名
-  repo: "lengxi001.github.io",//用户存储评论的github项目名称
-  oauth: {
-    client_id: "86e1fe732fdc9dfcc966",//注册OAuth Application时生产的ClinetID
-    client_secret:"6fd95b527bab48151a1e6c0b3538223354167a2c",//注册OAuth Application时生成的Client Secret
-  },
-})
-gitment.render('git')
-</script>
-<!-- Gitment代码结束 -->
-  
 
 
 
@@ -615,13 +515,13 @@ gitment.render('git')
         <a title="文章列表"><i class="fa fa-bars"></i><i class="fa fa-times"></i></a>
 
         
-            <a href="/2018/12/28/hello-world/" title="下一篇: Hello World">
+            <a href="/2018/12/31/hello-world/" title="下一篇: Hexo介绍">
                 <i class="fa fa-angle-right"></i>
             </a>
         
     </div>
 
-    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2019/01/01/短信登入/">短信验证登入实现</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/12/28/hello-world/">Hello World</a></li></ul>
+    <ul class="post-list"><li class="post-list-item"><a class="post-list-link" href="/2019/01/01/短信登入/">短信验证登入实现</a></li><li class="post-list-item"><a class="post-list-link" href="/2018/12/31/hello-world/">Hexo介绍</a></li></ul>
 
 
 
