@@ -23,7 +23,7 @@
 <meta property="og:site_name" content="JackWang的个人博客">
 <meta property="og:description" content="开始教学 进入秒嘀科技：前往注册 注册一个账号  注册好之后，点击 用户中心 -&amp;gt; 账户管理，就会进入如下界面 （顺便提一下，新注册的用户，平台会免费赠送你10元，足够大家学习和使用了，所以不用担心需要充钱）  你需要做的就是获取你自己的 ACCOUNT SID 和 AUTH TOKEN图片">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2019-01-02T20:01:20.159Z">
+<meta property="og:updated_time" content="2019-01-03T02:58:09.966Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="短信验证登入实现">
 <meta name="twitter:description" content="开始教学 进入秒嘀科技：前往注册 注册一个账号  注册好之后，点击 用户中心 -&amp;gt; 账户管理，就会进入如下界面 （顺便提一下，新注册的用户，平台会免费赠送你10元，足够大家学习和使用了，所以不用担心需要充钱）  你需要做的就是获取你自己的 ACCOUNT SID 和 AUTH TOKEN图片">
@@ -74,7 +74,7 @@
         isCategory: false,
         fancybox_js: "//cdn.bootcss.com/fancybox/2.1.5/jquery.fancybox.min.js",
         scrollreveal: "//cdn.bootcss.com/scrollReveal.js/3.1.4/scrollreveal.min.js",
-        search: false
+        search: true
     }
 </script>
 
@@ -121,6 +121,13 @@
         <p class="header-subtitle">Ordinary life , Unwilling to be ordinary code farmers</p>
         
 
+        
+            <form id="search-form">
+            <input type="text" id="local-search-input" name="q" placeholder="search..." class="search form-control" autocomplete="off" autocorrect="off" searchonload="true">
+            <i class="fa fa-times" onclick="resetSearch()"></i>
+            </form>
+            <div id="local-search-result"></div>
+            <p class="no-result">No results found <i class="fa fa-spinner fa-pulse"></i></p>
         
 
 
@@ -296,6 +303,7 @@
     </h1>
   
 
+        
       </header>
       
       <div class="article-info article-info-post">
@@ -434,7 +442,7 @@ String result = a.getResult(<span class="string">"手机号"</span>);
         <p><span>本文标题:</span><a href="/2019/01/01/短信登入/">短信验证登入实现</a></p>
         <p><span>文章作者:</span><a href="/" title="回到主页">JackWang</a></p>
         <p><span>发布时间:</span>2019-01-01, 00:00:00</p>
-        <p><span>最后更新:</span>2019-01-03, 04:01:20</p>
+        <p><span>最后更新:</span>2019-01-03, 10:58:09</p>
         <p>
             <span>原始链接:</span><a class="post-url" href="/2019/01/01/短信登入/" title="短信验证登入实现">http://www.wangbing003.top/2019/01/01/短信登入/</a>
             <span class="copy-path" data-clipboard-text="原文: http://www.wangbing003.top/2019/01/01/短信登入/　　作者: JackWang" title="点击复制文章链接"><i class="fa fa-clipboard"></i></span>
@@ -556,6 +564,24 @@ String result = a.getResult(<span class="string">"手机号"</span>);
           <span id="busuanzi_container_page_pv">
                 本文总阅读量<span id="busuanzi_value_page_pv"></span>次
               </span>
+              <p></p>
+              <span id="timeDate">载入天数...</span><span id="times">载入时分秒...</span>
+<script>
+    var now = new Date(); 
+    function createtime() { 
+        var grt= new Date("12/30/2018 12:49:00");//此处修改你的建站时间或者网站上线时间 
+        now.setTime(now.getTime()+250); 
+        days = (now - grt ) / 1000 / 60 / 60 / 24; dnum = Math.floor(days); 
+        hours = (now - grt ) / 1000 / 60 / 60 - (24 * dnum); hnum = Math.floor(hours); 
+        if(String(hnum).length ==1 ){hnum = "0" + hnum;} minutes = (now - grt ) / 1000 /60 - (24 * 60 * dnum) - (60 * hnum); 
+        mnum = Math.floor(minutes); if(String(mnum).length ==1 ){mnum = "0" + mnum;} 
+        seconds = (now - grt ) / 1000 - (24 * 60 * 60 * dnum) - (60 * 60 * hnum) - (60 * mnum); 
+        snum = Math.round(seconds); if(String(snum).length ==1 ){snum = "0" + snum;} 
+        document.getElementById("timeDate").innerHTML = "本站已安全运行 "+dnum+" 天 "; 
+        document.getElementById("times").innerHTML = hnum + " 小时 " + mnum + " 分 " + snum + " 秒"; 
+    } 
+setInterval("createtime()",250);
+</script>
 
     <div class="outer">
         <div id="footer-info">
