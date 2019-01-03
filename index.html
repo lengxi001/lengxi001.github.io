@@ -182,7 +182,7 @@
                             
                                 <a class="fa 新浪微博" href="http://weibo.com/wangbing003" title="新浪微博"></a>
                             
-                                <a class="fa GitHub" href="https://github.com/lengxi001" title="GitHub"></a>
+                                <a class="fa CSDN" href="https://blog.csdn.net/qq_37493851" title="CSDN"></a>
                             
                                 <a class="fa 博客园" href="https://www.cnblogs.com/" title="博客园"></a>
                             
@@ -206,11 +206,11 @@
                     
                       <a class="main-nav-link switch-friends-link" href="https://hexo.io">Hexo</a>
                     
-                      <a class="main-nav-link switch-friends-link" href="https://github.com/lengxi001/lengxi001.github.io">GitHub</a>
+                      <a class="main-nav-link switch-friends-link" href="https://github.com/lengxi001">GitHub</a>
                     
-                      <a class="main-nav-link switch-friends-link" href="http://t.cn/RrXWP6M">Personal space</a>
+                      <a class="main-nav-link switch-friends-link" href="http://t.cn/RrXWP6M">PersonalSpace</a>
                     
-                      <a class="main-nav-link switch-friends-link" href="https://jenkinwang.github.io">Jenkin Wang</a>
+                      <a class="main-nav-link switch-friends-link" href="https://jenkinwang.github.io">JenkinWang</a>
                     
                     </div>
                 </section>
@@ -261,7 +261,7 @@
                             
                                 <a class="fa 新浪微博" target="_blank" href="http://weibo.com/wangbing003" title="新浪微博"></a>
                             
-                                <a class="fa GitHub" target="_blank" href="https://github.com/lengxi001" title="GitHub"></a>
+                                <a class="fa CSDN" target="_blank" href="https://blog.csdn.net/qq_37493851" title="CSDN"></a>
                             
                                 <a class="fa 博客园" target="_blank" href="https://www.cnblogs.com/" title="博客园"></a>
                             
@@ -282,6 +282,15 @@
       <time datetime="2018-12-31T16:00:00.000Z" itemprop="datePublished">2019-01-01</time>
 </a>
 
+ 
+    <a href="/2019/01/01/短信登入/#comments" title="查看评论">
+        <i class="fa fa-comments-o" aria-hidden="true"></i>
+        <span class="count-comment"></span>
+        
+        
+            <span class="disqus-comment-count" data-disqus-identifier="2019/01/01/短信登入/"></span>
+        
+    </a>
 
     </div>
   
@@ -353,6 +362,15 @@
       <time datetime="2018-12-31T03:23:24.000Z" itemprop="datePublished">2018-12-31</time>
 </a>
 
+ 
+    <a href="/2018/12/31/hello-world/#comments" title="查看评论">
+        <i class="fa fa-comments-o" aria-hidden="true"></i>
+        <span class="count-comment"></span>
+        
+        
+            <span class="disqus-comment-count" data-disqus-identifier="2018/12/31/hello-world/"></span>
+        
+    </a>
 
     </div>
   
@@ -470,6 +488,26 @@
     </script>
 
 
+    
+
+    
+        <script id="dsq-count-scr" src="//.disqus.com/count.js" async></script>
+        <script>
+            if ($(".left-col").is(":visible")) {
+                var $disqusCount = $(".disqus-comment-count");
+                $disqusCount.bind("DOMNodeInserted", function(e) {
+                    var num = $(this).text().replace(/[^0-9]/ig,"");
+                    if (num > 0) {
+                        $(this).siblings(".count-comment").text(num);
+                    }
+                    $(this).remove();
+                })
+            } else {
+                $(".disqus-comment-count").remove();
+            }
+        </script>
+     
+
 
 
 
@@ -503,23 +541,6 @@ MathJax.Hub.Queue(function() {
     // Open in New Window
     
 </script>
-
-    <script>
-        var originTitle = document.title;
-        var titleTime;
-        document.addEventListener("visibilitychange", function() {
-            if (document.hidden) {
-                document.title = "(つェ⊂) 我藏好了哦~ " + originTitle;
-                clearTimeout(titleTime);
-            }
-            else {
-                document.title = "(*´∇｀*) 被你发现啦~ " + originTitle;
-                titleTime = setTimeout(function() {
-                    document.title = originTitle;
-                }, 2000);
-            }
-        })
-    </script>
 
 <script async src="https://dn-lbstatics.qbox.me/busuanzi/2.3/busuanzi.pure.mini.js">
 +</script>
